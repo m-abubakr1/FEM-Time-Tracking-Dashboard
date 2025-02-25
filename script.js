@@ -2,7 +2,7 @@ async function fetchData() {
   try {
     let response = await fetch("/data.json");
     let data = await response.json();
-    console.log(data.timeframes[2]);
+    console.log(data);
   } catch (error) {
     console.log("Error:", error);
   }
