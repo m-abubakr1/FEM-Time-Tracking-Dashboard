@@ -8,11 +8,6 @@
   margin: 0;
 }
 
-body {
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
-}
-
 img,
 picture,
 video,
@@ -57,6 +52,7 @@ h6 {
 }
 
 /* CSS Variables */
+
 :root {
   /* Primary Colors */
 
@@ -78,4 +74,24 @@ h6 {
   --fw-3: 300;
   --fw-4: 400;
   --fw-5: 500;
+
+  --fs-300: 0.825rem;
+  --fs-400: 1rem;
+  --fs-900: 2.7rem;
+
+  --ff-base: "Rubik", "sans serif";
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  font-family: var(--ff-base);
+  font-size: var(--fs-400);
+  font-weight: var(--fw-3);
+  color: var(--pale-blue);
+  line-height: 1.5;
+
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  background-color: var(--dark-blue);
 }
