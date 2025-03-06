@@ -55,3 +55,8 @@ h6 {
 #__next {
   isolation: isolate;
 }
+
+/* CSS Variables */
+:root {
+    --very-dark-blue: hsl(226, 43%, 10%);
+}
