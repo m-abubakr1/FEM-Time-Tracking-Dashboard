@@ -95,3 +95,7 @@ body {
   place-content: center;
   background-color: var(--very-dark-blue);
 }
+span {
+  font-size: var(--fs-900);
+  font-weight: var(--fw-4);
+}
