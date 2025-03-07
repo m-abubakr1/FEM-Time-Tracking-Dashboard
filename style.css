@@ -101,3 +101,13 @@ span {
   font-size: var(--fs-900);
   font-weight: var(--fw-4);
 }
+
+.tracker {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-auto-rows: max-content;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  gap: 2.4rem;
+}
