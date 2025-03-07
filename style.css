@@ -55,7 +55,6 @@ h6 {
 
 :root {
   /* Primary Colors */
-
   --blue: hsl(246, 80%, 60%);
   --light-red: hsl(15, 100%, 70%); /*work*/
   --soft-blue: hsl(195, 74%, 62%); /*play*/
@@ -70,6 +69,8 @@ h6 {
   --desaturated-blue: hsl(235, 45%, 61%);
   --pale-blue: hsl(236, 100%, 87%);
 
+  --blue-700: hsl(236, 41%, 34%);
+
   /* fonts */
   --fw-3: 300;
   --fw-4: 400;
@@ -77,11 +78,13 @@ h6 {
 
   --fs-300: 0.825rem;
   --fs-400: 1rem;
-  --fs-900: 2.7rem;
+  --fs-900: 1.8rem;
+
+  --br: 1.5rem;
 
   --ff-base: "Rubik", "sans serif";
 
-  /* font-size: 62.5%; */
+  font-size: 62.5%;
 }
 
 body {
@@ -97,10 +100,6 @@ body {
   place-content: center;
   background-color: var(--very-dark-blue);
 }
-span {
-  font-size: var(--fs-900);
-  font-weight: var(--fw-4);
-}
 
 .tracker {
   width: 100%;
@@ -110,4 +109,41 @@ span {
   grid-template-columns: 1fr;
   justify-items: center;
   gap: 2.4rem;
+}
+
+.menu {
+  background: var(--dark-blue);
+  border-radius: var(--br);
+  overflow: hidden;
+  width: 100%;
+}
+
+.profile-owner {
+  width: 100%;
+  padding: 3rem 2.9rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+  background: var(--blue);
+  border-radius: 0 0 var(--br) var(--br);
+}
+
+.profile-pic {
+  width: 6.4rem;
+  border: 0.3rem solid white;
+  border-radius: 50%;
+}
+.profile-container {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 0.4rem;
+}
+.profile-container p {
+  font-size: var(--fs-400);
+}
+
+.profile-container h1 {
+  font-size: var(--fs-900);
 }
