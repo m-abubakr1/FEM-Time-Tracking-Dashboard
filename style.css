@@ -80,6 +80,8 @@ h6 {
   --fs-900: 2.7rem;
 
   --ff-base: "Rubik", "sans serif";
+
+  font-size: 62.5%;
 }
 
 body {
