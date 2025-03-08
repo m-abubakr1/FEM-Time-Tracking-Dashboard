@@ -98,9 +98,6 @@ nav,
 section {
   display: block;
 }
-body {
-  line-height: 1;
-}
 ol,
 ul {
   list-style: none;
@@ -191,6 +188,7 @@ body {
   background: var(--blue-900);
   display: grid;
   place-items: center;
+  line-height: 1;
   padding: 8.1rem 2.4rem;
 }
 
