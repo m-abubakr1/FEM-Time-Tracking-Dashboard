@@ -149,12 +149,6 @@ a:active {
   color: inherit;
 }
 
-button {
-  border: none;
-  outline: none;
-  background: none;
-}
-
 html {
   font-family: "Rubik", sans-serif;
 
