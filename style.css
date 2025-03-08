@@ -319,11 +319,6 @@ section.activity-tracker__menu {
   transition: color 250ms;
   cursor: pointer;
 }
-/* 
-      .activity-tracker__option:hover, 
-      .activity-tracker__option.active {
-          color: white;
-      } */
 
 .activity-tracker__option:is(:hover, .active) {
   color: white;
