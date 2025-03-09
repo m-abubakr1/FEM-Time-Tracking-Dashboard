@@ -13,7 +13,7 @@ const listenToButtons = (array) => {
 
 const activateClickedButton = (button) => {
   buttons.forEach((b) => b.classList.remove("active"));
-  button.classList.add("activ");
+  button.classList.add("active");
 };
 
 const loadData = async () => {
