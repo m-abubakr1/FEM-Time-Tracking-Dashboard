@@ -11,9 +11,7 @@ This is a solution to the [Time tracking dashboard challenge on Frontend Mentor]
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
-- [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
 ## Overview
@@ -32,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Frontend Mentor Solution Uploaded](https://your-solution-url.com)
+- Live Site URL: [Github live pages](https://your-live-site-url.com)
 
 ## My process
 
@@ -50,51 +48,36 @@ Users should be able to:
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+I learned new methods to fetch data from .JSON File. Integration and manipulation of data is cool.
 
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
+```js
+async function updateActivityData(timeframe = "weekly") {
+  try {
+    const response = await fetch("data.json");
+    const data = await response.json();
+  }}
 ```
 
+The Defer attribute is a new thing for me which changed my style for now. It makes the JS run after the HTML has loaded.
+
+```html
+<script defer src="script.js"></script>
+```
+
+This snippet is a new good approach to handle values customary.
+
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+:root {
+  font-size: 62.5%;
 }
 ```
 
-```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
-
-### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
-
 ### Useful resources
 
-- [MDN Docs](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Youtube Solution](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-## Author
-
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+- [DevDocs](https://devdocs.io/) - This helped me for fetching data from json using different ways. I really liked "try catch" method and will use it going forward.
+- [ghrizhliecodes- github repo](https://github.com/grizhlieCodes/time-tracking-dashboard) - This is the repo which helped me finally understand how to style various things in which i got stuck.
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+Hats Off to Seer Studio for giving a good approach to complete this challenge, i learned all the new stuff from their Youtube video.
+To save my own time, i used some of their code as well and modified accordingly. [SEER STUDIO](https://www.youtube.com/@GrizhlieCodes)
