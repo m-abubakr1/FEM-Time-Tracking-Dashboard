@@ -191,7 +191,7 @@ body {
   padding: 8.1rem 2.4rem;
 }
 
-section.activity-tracker {
+.activity-tracker {
   width: 100%;
   height: auto;
   display: grid;
@@ -202,7 +202,7 @@ section.activity-tracker {
 }
 
 @media screen and (min-width: 500px) {
-  section.activity-tracker {
+  .activity-tracker {
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     grid-template-rows: 1fr 1fr;
     min-height: 51.8rem;
@@ -211,12 +211,12 @@ section.activity-tracker {
 }
 
 @media screen and (min-width: 1110px) {
-  section.activity-tracker {
+  .activity-tracker {
     max-width: 111rem;
   }
 }
 
-section.activity-tracker__menu {
+.activity-tracker__menu {
   background: var(--blue-800);
   border-radius: var(--br);
   overflow: hidden;
@@ -224,7 +224,7 @@ section.activity-tracker__menu {
 }
 
 @media screen and (min-width: 500px) {
-  section.activity-tracker__menu {
+  .activity-tracker__menu {
     grid-row: 1/3;
     display: flex;
     flex-flow: column nowrap;
