@@ -5,19 +5,28 @@ async function updateActivityData(timeframe = "weekly") {
     const data = await response.json();
 
     // Loop through each activity in the JSON
-    data.forEach(activity => {
+    data.forEach((activity) => {
       const activityClass = activity.title.toLowerCase().replace(" ", "-"); // Convert to lowercase and replace spaces
-      const activitySection = document.querySelector(`.activity-tracker__activity.${activityClass}`);
+      const activitySection = document.querySelector(
+        `.activity-tracker__activity.${activityClass}`
+      );
 
       if (activitySection) {
-        const currentTimeframe = activitySection.querySelector(".activity__current-timeframe");
+        const currentTimeframe = activitySection.querySelector(
+          ".activity__current-timeframe"
+        );
         const timeWindow = activitySection.querySelector(".time-window");
         const time = activitySection.querySelector(".time");
 
         // Update content
-        if (currentTimeframe) currentTimeframe.textContent = `${activity.timeframes[timeframe].current}hrs`;
-        if (timeWindow) timeWindow.textContent = `Last ${timeframe.charAt(0).toUpperCase() + timeframe.slice(1)}`;
-        if (time) time.textContent = `${activity.timeframes[timeframe].previous}hrs`;
+        if (currentTimeframe)
+          currentTimeframe.textContent = `${activity.timeframes[timeframe].current}hrs`;
+        if (timeWindow)
+          timeWindow.textContent = `Last ${
+            timeframe.charAt(0).toUpperCase() + timeframe.slice(1)
+          }`;
+        if (time)
+          time.textContent = `${activity.timeframes[timeframe].previous}hrs`;
       }
     });
 
@@ -30,7 +39,7 @@ async function updateActivityData(timeframe = "weekly") {
 
 // Function to handle the active class toggle
 function updateActiveButton(selectedTimeframe) {
-  document.querySelectorAll(".activity-tracker__option").forEach(button => {
+  document.querySelectorAll(".activity-tracker__option").forEach((button) => {
     if (button.dataset.timeframe === selectedTimeframe) {
       button.classList.add("active"); // Add active class to selected button
     } else {
@@ -40,7 +49,7 @@ function updateActiveButton(selectedTimeframe) {
 }
 
 // Add event listeners to timeframe buttons
-document.querySelectorAll(".activity-tracker__option").forEach(button => {
+document.querySelectorAll(".activity-tracker__option").forEach((button) => {
   button.addEventListener("click", () => {
     updateActivityData(button.dataset.timeframe);
   });
