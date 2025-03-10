@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor Solution Uploaded](https://your-solution-url.com)
+- Solution URL: [Frontend Mentor Solution Uploaded](https://www.frontendmentor.io/solutions/time-tracking-dashboard---using-js-asyncawait-json-hl9HSMVot7)
 - Live Site URL: [Github live pages](https://m-abubakr1.github.io/FEM-Time-Tracking-Dashboard/)
 
 ## My process
