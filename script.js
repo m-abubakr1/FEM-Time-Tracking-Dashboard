@@ -41,14 +41,13 @@ async function updateActivityData(timeframe = "weekly") {
 function updateActiveButton(selectedTimeframe) {
   document.querySelectorAll(".activity-tracker__option").forEach((button) => {
     if (button.dataset.timeframe === selectedTimeframe) {
-      button.classList.add("active"); // Add active class to selected button
+      button.classList.add("active"); 
     } else {
-      button.classList.remove("active"); // Remove active class from others
+      button.classList.remove("active"); 
     }
   });
 }
 
-// Add event listeners to timeframe buttons
 document.querySelectorAll(".activity-tracker__option").forEach((button) => {
   button.addEventListener("click", () => {
     updateActivityData(button.dataset.timeframe);
